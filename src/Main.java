@@ -32,7 +32,7 @@ public class Main {
         //give as exception
 
 
-        //3
+        //3 took from Daniel
         for (int i = 0; i < words.length; i++) {
             if (words[i].matches(".*[a]+.*")) {
                 System.out.println(words[i] + " contains a");
@@ -67,7 +67,8 @@ public class Main {
         printArray(charArray);
 
 
-        //6  ????
+        //6  calculate2() YAGNI and DRY
+        //   superCalculate() YAGNI
 
         //7
         String word = "Dictionary";
@@ -78,7 +79,7 @@ public class Main {
         System.out.println(str);
 
 
-        //8
+        //8 took from Daniel
         Method[] allMethods = String.class.getDeclaredMethods();
         int totalPublicMethods = 0;
         for (Method method : allMethods) {
@@ -98,13 +99,13 @@ public class Main {
         String name = (String) privateStringMethod.invoke(user);
         System.out.println(name);
 
-        //10
+        //10 took from Daniel
         String REGEX = "dog";
         String INPUT = "The dog says meow. All dogs say meow.";
         String REPLACE = "cat";
-        Pattern p = Pattern.compile(REGEX);
-        Matcher m = p.matcher(INPUT);
-        INPUT = m.replaceAll(REPLACE);
+        Pattern pat = Pattern.compile(REGEX);
+        Matcher mat = pat.matcher(INPUT);
+        INPUT = mat.replaceAll(REPLACE);
         System.out.println(INPUT);
 
 
